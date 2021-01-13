@@ -1,0 +1,101 @@
+(?d).git
+(?d)# Byte-compiled / optimized / DLL files
+(?d)__pycache__
+(?d)*.py[cod]
+(?d)*$py.class
+
+(?d)# C extensions
+(?d)*.so
+
+(?d)# Distribution / packaging
+(?d).Python
+(?d)build
+(?d)develop-eggs
+(?d)dist
+(?d)downloads
+(?d)eggs
+(?d).eggs
+(?d)lib
+(?d)lib64
+(?d)parts
+(?d)sdist
+(?d)var
+(?d)wheels
+(?d)pip-wheel-metadata
+(?d)share/python-wheels
+(?d)*.egg-info
+(?d).installed.cfg
+(?d)*.egg
+(?d)MANIFEST
+
+(?d)# PyInstaller
+(?d)#  Usually these files are written by a python script from a template
+(?d)#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+(?d)*.manifest
+(?d)*.spec
+
+(?d)# Installer logs
+(?d)pip-log.txt
+(?d)pip-delete-this-directory.txt
+
+(?d)# Translations
+(?d)*.mo
+(?d)*.pot
+
+(?d)# Django stuff:
+(?d)*.log
+(?d)local_settings.py
+(?d)db.sqlite3
+
+(?d)# Flask stuff:
+(?d)instance
+(?d).webassets-cache
+
+(?d)# Scrapy stuff:
+(?d).scrapy
+
+(?d)# Sphinx documentation
+(?d)docs/_build
+
+(?d)# PyBuilder
+(?d)target
+
+(?d)# Jupyter Notebook
+(?d).ipynb_checkpoints
+
+(?d)# IPython
+(?d)profile_default
+(?d)ipython_config.py
+
+(?d)# pyenv
+(?d).python-version
+
+(?d)# celery beat schedule file
+(?d)celerybeat-schedule
+
+(?d)# SageMath parsed files
+(?d)*.sage.py
+
+(?d)# Environments
+(?d).env
+(?d).venv
+(?d)env
+(?d)venv
+(?d)ENV
+(?d)env.bak
+(?d)venv.bak
+
+(?d)# Spyder project settings
+(?d).spyderproject
+(?d).spyproject
+
+(?d)# Rope project settings
+(?d).ropeproject
+
+(?d)# mypy
+(?d).mypy_cache
+(?d).dmypy.json
+(?d)dmypy.json
+
+(?d)# Pyre type checker
+(?d).pyre

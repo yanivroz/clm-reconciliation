@@ -1,0 +1,17 @@
+name: clm-reconciliation
+image: python:3.8.7
+command: bash
+volumes:
+- /root/.cache/pip
+sync:
+- .:/usr/src/app
+forward:
+- 8080:8080
+reverse:
+- 9000:9000
+persistentVolume:
+  enabled: true
+environment:
+  - API_SERVER=http://nginx-deployment.default.svc.cluster.local:8080/clm/api/clusters/adc/all/params?all=True
+  - KAFKA_HOST=kafka.kafka.svc.cluster.local:9092
+  - KAFKA_TOPIC=my_favorite_topic

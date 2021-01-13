@@ -1,0 +1,24 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: clm-reconciliation-job
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      backoffLimit: 0
+      template:
+        spec:
+          containers:
+          - name: clm-reconciliation
+            image: yarozen/clmreconciliation:latest
+            imagePullPolicy: IfNotPresent
+            env:
+            - name: API_SERVER
+              value: "http://nginx-deployment.default.svc.cluster.local:8080/clm/api/clusters/adc/all/params?all=True"
+            - name: KAFKA_HOST
+              value: "kafka.kafka.svc.cluster.local:9092"
+            - name: KAFKA_TOPIC
+              value: "my_favorite_topic"
+          restartPolicy: Never
+        
